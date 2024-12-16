@@ -5,7 +5,7 @@ public struct Product {
 }
 
 public struct ProductGroup {
-    public let produtcs: [Product]
+    public let products: [Product]
     public let title: String
 }
 
@@ -16,6 +16,6 @@ extension ProductGroup {
             Product (name: "Помидоры"),
             Product (name: "Капуста")
         ]
-        return ProductGroup(produtcs: products, title: "Овощи")
+        return ProductGroup(products: products, title: "Овощи")
     }
 }

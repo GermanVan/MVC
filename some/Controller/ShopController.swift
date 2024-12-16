@@ -21,13 +21,13 @@ private extension ShopController {
 
 extension ShopController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shopModel.products.count
+        shopModel.products.count
     }
     
-}
-
-func tableView (_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell")
-    cell?.textLabel?.text = shopModel.products[indexPath.row].name
-    return cell! 
+    /// Криво скопировал опять, ошибки скобок
+    func tableView (_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell")
+        cell?.textLabel?.text = shopModel.products[indexPath.row].name
+        return cell!
+    }
 }
